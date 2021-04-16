@@ -9,3 +9,5 @@ const guitarsReducer = (state, action) => {
             return state
     }
 }
+
+export default guitarsReducer
