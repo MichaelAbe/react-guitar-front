@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { addGuitar } from '../actions/index'
 
 class Form extends Component {
 
@@ -21,8 +23,8 @@ class Form extends Component {
 
       handleSubmit = (e) => {
         e.preventDefault()
-        console.log(this.state)
-        // this.props.addBlog(this.state, this.props.history);
+        //console.log(this.state)
+        this.props.addBGuitar(this.state, this.props.history)
       }
 
     render() {
@@ -65,4 +67,4 @@ class Form extends Component {
     }
 }
 
-export default Form
+export default connect(null, { addGuitar })(Form)
