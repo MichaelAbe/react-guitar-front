@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 // import './App.css';
 import HelloWorld from './components/HelloWorld';
 import Nav from './components/Nav'
+import Home from './components/Home'
+import Err from './components/Err';
 
 
 class App extends Component {
@@ -13,7 +15,8 @@ class App extends Component {
       <Router>
         <Nav /> 
         <Switch>
-
+          <Route exact path='/' component= { Home } />
+          <Route component= { Err } />
         </Switch>
         <Footer />
       </Router>
