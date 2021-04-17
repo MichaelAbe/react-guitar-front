@@ -1,4 +1,5 @@
-import react, { Component} from 'react'
+import React, { Component} from 'react'
+import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Footer from './components/Footer';
 // import './App.css';
@@ -29,4 +30,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(null, { getGuitars }) App;
