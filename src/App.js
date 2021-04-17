@@ -1,9 +1,10 @@
 import React, { Component} from 'react'
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { getGuitars } from './actions/index'
 import Footer from './components/Footer';
 // import './App.css';
-import HelloWorld from './components/HelloWorld';
+
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Err from './components/Err'
@@ -12,8 +13,18 @@ import Index from './components/Index';
 
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.getGuitars()
+  }
   
   render() {
+    if (this.props.loading) {
+      return (
+        <h3>Loading...</h3>
+      )
+    }
+
     return (
       <Router>
         <Nav /> 
@@ -30,4 +41,11 @@ class App extends Component {
   }
 }
 
-export default connect(null, { getGuitars }) App;
+const mapStateToProps = state => {
+  return {
+    loading: state.loading
+  }
+}
+
+
+export default connect(mapStateToProps, { getGuitars })(App);
