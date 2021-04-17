@@ -10,6 +10,7 @@ import Home from './components/Home'
 import Err from './components/Err'
 import About from './components/About'
 import Index from './components/Index';
+import Form from './components/Form'
 
 
 class App extends Component {
@@ -32,6 +33,7 @@ class App extends Component {
           <Route exact path='/' component= { Home } />
           <Route exact path='/about' component= { About } /> 
           <Route exact path='/guitars' component= { Index } /> 
+          <Route exact path='/guitars/new' component= { Form } />
           <Route component= { Err } />
         </Switch>
         <Footer />
