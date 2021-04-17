@@ -7,6 +7,7 @@ import Nav from './components/Nav'
 import Home from './components/Home'
 import Err from './components/Err'
 import About from './components/About'
+import Index from './components/Index';
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component= { Home } />
           <Route exact path='/about' component= { About } /> 
+          <Route exact path='/guitars' component= { Index } /> 
           <Route component= { Err } />
         </Switch>
         <Footer />
