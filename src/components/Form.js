@@ -24,7 +24,7 @@ class Form extends Component {
       handleSubmit = (e) => {
         e.preventDefault()
         //console.log(this.state)
-        this.props.addBGuitar(this.state, this.props.history)
+        this.props.addGuitar(this.state, this.props.history)
       }
 
     render() {

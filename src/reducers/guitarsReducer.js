@@ -16,9 +16,13 @@ const guitarsReducer = (state=initialState, action) => {
                 loading: false,
                 guitars: action.guitars
             }
+        case "ADD_GUITAR":
+            return {
+                ...state,
+                guitars: [...state.guitars, action.guitar]
+            }
         default:
             return state
     }
 }
-
 export default guitarsReducer
