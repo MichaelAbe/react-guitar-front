@@ -3,8 +3,9 @@ import React, { Component } from 'react'
 class Home extends Component {
     render() {
         return (
-            <div>
-                <h1>HOME PAGE</h1>
+            <div className='home'>
+                <h1 className='header'>Welcome to G.A.S. app</h1>
+                <p className='content'></p>
             </div>
         )
     }

@@ -5,7 +5,7 @@ import { getGuitars } from './actions/index'
 import Footer from './components/Footer';
 // import './App.css';
 
-import Nav from './components/Nav'
+import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Err from './components/Err'
 import About from './components/About'
@@ -28,7 +28,7 @@ class App extends Component {
 
     return (
       <Router>
-        <Nav /> 
+        <Navbar /> 
         <Switch>
           <Route exact path='/' component= { Home } />
           <Route exact path='/about' component= { About } /> 
