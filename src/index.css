@@ -12,6 +12,7 @@
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
+  border-top: 3px solid #f2f2f2;
   border-bottom: 3px solid #f2f2f2;
 }
 .navbar h1 {
@@ -32,4 +33,39 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+.standard {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  /* border-bottom: 3px solid #f2f2f2; */
+}
+
+.standard .stats {
+  align-items: center;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 3px solid #f2f2f2;
+  border-bottom: 3px solid #f2f2f2;
+  background-color: white;
+}
+
+
+#root {
+
+  padding-bottom:60px;
 }

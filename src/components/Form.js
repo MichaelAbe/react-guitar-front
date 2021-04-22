@@ -29,7 +29,7 @@ class Form extends Component {
 
     render() {
         return (
-            <div>
+            <div className='standard'>
                 <h3>Add Guitar</h3>
                 <form onSubmit={ this.handleSubmit }>
                     <div>
