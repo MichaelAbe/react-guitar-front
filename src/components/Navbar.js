@@ -6,11 +6,9 @@ class Navbar extends Component {
         return (
 
             <nav className='navbar'>
-                <h1>Guitar . Accelerated . Storage . application</h1>
+                <h1><Link to='/'>Guitar . Accelerated . Storage . application</Link></h1>
                 <div className='links'>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/guitars'>Guitars</Link></li>
+                <li><Link to='/guitars'>My Guitars</Link></li>
                 <li><Link to='/guitars/new'>Add a Guitar</Link></li>
                 </div>
             </nav>

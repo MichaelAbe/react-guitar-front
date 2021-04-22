@@ -23,15 +23,15 @@ class Form extends Component {
 
       handleSubmit = (e) => {
         e.preventDefault()
-        //console.log(this.state)
+        console.log(this.state)
         this.props.addGuitar(this.state, this.props.history)
       }
 
     render() {
         return (
             <div className='standard'>
-                <h3>Add Guitar</h3>
-                <form onSubmit={ this.handleSubmit }>
+                <h3 className='top'>Add Guitar</h3>
+                <form onSubmit={ this.handleSubmit } className='content'>
                     <div>
                         <label htmlFor='make'>Make: </label>
                         <input type='text' id='make' name='make' value={ this.state.make } onChange={ this.handleChange }/>
@@ -45,7 +45,7 @@ class Form extends Component {
                         <input type='text' id='year' name='year' value={ this.state.year } onChange={ this.handleChange }/>
                     </div>
                     <div>
-                        <label htmlFor='sn'>Serial Number: </label>
+                        <label htmlFor='sn'>Serial #: </label>
                         <input type='text' id='sn' name='sn' value={ this.state.sn } onChange={ this.handleChange }/>
                     </div>
                     <div>
