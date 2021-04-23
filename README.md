@@ -1,3 +1,15 @@
+Guitar Accelerated Storage app 'G.A.S. app'
+
+    An application used to store information about guitars for personal/insurance reasons. Built with React, Redux, JavaScript, and CSS. 
+
+Project Status:
+
+    This project is cuirrently in development. Future plans include users/security and full crud. Strech goal to introduce common social media site functionality including; friends, messaging, message boards, ...ect. 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
