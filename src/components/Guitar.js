@@ -5,12 +5,12 @@ class Guitar extends Component {
 
         
 
-        const handleDelete = e => {
-            fetch("http://localhost:3001/guitars/" + `${this.props.id.toString()}`, {
-              method: "DELETE"
-              })
-             window.location.reload()
-          }
+        // const handleDelete = e => {
+        //     fetch("http://localhost:3001/guitars/" + `${this.props.id.toString()}`, {
+        //       method: "DELETE"
+        //       })
+        //      window.location.reload()
+        //   }
         
         const { make, model, sn, price, finish, notes, year } = this.props
         //  "make"
@@ -28,7 +28,7 @@ class Guitar extends Component {
                 <h4> Finish: { finish }</h4>
                 <h4> Price Paid: { price }</h4>
                 <h4> Notes: { notes }</h4>
-                <button onClick={ handleDelete } className='button'>Delete</button>
+                {/* <button onClick={ handleDelete } className='button'>Delete</button> */}
                 </div>
             </div>
         )
