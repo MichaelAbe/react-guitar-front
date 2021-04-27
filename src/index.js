@@ -2,13 +2,16 @@ import './index.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import { createStore, applyMiddleware} from 'redux'
+import { createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
 import App from './App';
 import reportWebVitals from './reportWebVitals'
 import guitarsReducer from './reducers/guitarsReducer'
 
-const store = createStore(guitarsReducer, applyMiddleware(thunk))
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  const store = createStore(guitarsReducer, composeEnhancers(applyMiddleware(thunk)))
+
+// const store = createStore(guitarsReducer, applyMiddleware(thunk))
 
 ReactDOM.render(
   <React.StrictMode>
